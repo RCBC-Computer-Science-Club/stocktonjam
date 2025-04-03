@@ -1,5 +1,5 @@
 import {Collider, GameObject, collisionObjects, castRay} from "../../library.js";
-import {Inputs} from "../../platform.js";
+import {getInputs} from "../../platform.js";
 import { drawRect } from "../../shape.js";
 import { activeSequence } from "../main.js";
 export class Player extends GameObject {
@@ -40,6 +40,8 @@ export class Player extends GameObject {
 
     update(dt) {
         this.checkGroundBelow();
+
+        const Inputs = getInputs();
 
         this.dx = 0;
         if (Inputs.includes("p1-left")) this.dx -= 0.5;
