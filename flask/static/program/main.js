@@ -34,6 +34,18 @@ export function programStart() {
 
     level1Sequence.objectManager.push(new Platform(0, 220, p_y, p_y - 220));
     level1Sequence.objectManager.push(player);
+
+    level1Sequence.objectManager.push(new Platform(10, 175, 100, 10));
+    level1Sequence.objectManager.push(player);
+
+    level1Sequence.objectManager.push(new Platform(135, 135, 100, 10));
+    level1Sequence.objectManager.push(player);
+
+    level1Sequence.objectManager.push(new Platform(10, 100, 100, 10));
+    level1Sequence.objectManager.push(player);
+
+    level1Sequence.objectManager.push(new Platform(135, 60, 100, 10));
+    level1Sequence.objectManager.push(player);
     sequences_main.push(titleSequence);
 }
 
