@@ -75,13 +75,9 @@ export class Player extends GameObject {
                 this.isJumping = false;
                 this.isGrounded = true;
             } else if (colliderType === collisionObjects.SIDE_LEFT) { // The left side of the player object
-                if(this.dx < 0) {
-                    this.dx = 0;
-                }
+                this.dx = 0;
             } else if (colliderType === collisionObjects.SIDE_RIGHT) { // The right side of the player object
-                if(this.dx > 0) {
-                    this.dx = 0;
-                }
+                this.dx = 0;
             } else if (colliderType === collisionObjects.SIDE_TOP) { // The top of the player object
                 this.dy = Math.max(this.dy, 0);
             }
