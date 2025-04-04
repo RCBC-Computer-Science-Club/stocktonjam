@@ -1,7 +1,7 @@
-import { GameObject, Collider, collisionObjects } from "../../library.js";
+import { GameObject, Collider } from "../../library.js";
 
 export class Trigger extends GameObject {
-    constructor(x,y,w,h) {
+    constructor(x, y, w, h) {
         super(x,y);
 
         this.w = w;
